@@ -319,42 +319,6 @@ body {
   }
 }
 
-@media (max-width: 1100px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    flex-direction: column;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .metrics-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 700px) {
-  .dashboard {
-    padding: 18px;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .workflow {
-    grid-template-columns: 1fr;
-  }
-
-  .metrics-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -470,4 +434,119 @@ body {
   display: flex;
   flex-direction: column;
   gap: 22px;
+}
+
+@media (max-width: 1100px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .hero {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.18;
+    max-width: 360px;
+    margin: 0 auto 12px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .status-panel {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+  }
+
+  .metric-card {
+    min-width: 0;
+    min-height: 120px;
+    padding: 14px;
+  }
+
+  .metric-card strong {
+    font-size: 30px;
+  }
+
+  .metric-card p {
+    font-size: 12px;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .highway-scene {
+    width: 100%;
+    aspect-ratio: 1650 / 953;
+  }
+
+  .road {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .workflow {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .step {
+    width: 100%;
+    padding: 16px 10px;
+  }
+
+  .info-card {
+    width: 100%;
+  }
+
+  .mini-map {
+    display: none;
+  }
 }
