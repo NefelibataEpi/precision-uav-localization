@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precision UAV Highway Patrol System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="dashboard">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">AI-Powered Smart Highway Enforcement</p>
+        <h1>Precision UAV Highway Patrol System</h1>
+        <p class="subtitle">
+          Real-time vehicle localization, autonomous hovering, and zoom tracking from UAV footage.
+        </p>
+      </div>
+
+      <div class="status-panel">
+        <span class="live-dot"></span>
+        <span>LIVE DEMO</span>
+        <strong>AI ACTIVE</strong>
+      </div>
+    </header>
+
+    <section class="metrics-grid">
+        <div class="metric-card">
+            <span>Active UAVs</span>
+            <strong>03</strong>
+            <p>Highway patrol units online</p>
+        </div>
+
+        <div class="metric-card">
+            <span>Vehicles Scanned</span>
+            <strong>1,284</strong>
+            <p>Processed from live UAV footage</p>
+        </div>
+
+        <div class="metric-card">
+            <span>Violations Detected</span>
+            <strong>17</strong>
+            <p>Overspeeding and lane violations</p>
+        </div>
+
+        <div class="metric-card">
+            <span>Avg. Response Time</span>
+            <strong>8.2s</strong>
+            <p>From detection to target localization</p>
+        </div>
+    </section>
+
+    <section class="main-grid">
+      <section class="card video-card">
+        <div class="card-title">
+          <span>UAV Highway Feed</span>
+          <span class="rec"><span></span> REC</span>
+        </div>
+
+        <div class="highway-scene">
+          <div class="road"></div>
+          <div class="scan-line"></div>
+          <div class="corner-frame"></div>
+        </div>
+
+        <section class="workflow">
+            <div class="step active">UAV Capture</div>
+            <div class="step">AI Detection</div>
+            <div class="step">Localization</div>
+            <div class="step">Auto Hovering</div>
+            <div class="step">Zoom Tracking</div>
+            <div class="step">Evidence Upload</div>
+        </section>
+      </section>
+
+      <aside class="card info-card">
+        <div class="card-title">Target Information</div>
+
+        <div class="target-id">
+          <span>Vehicle ID</span>
+          <strong>V-0327</strong>
+        </div>
+
+        <div class="data-list">
+          <div><span>Violation</span><strong class="danger">Overspeeding</strong></div>
+          <div><span>Latitude</span><strong>31.274586 N</strong></div>
+          <div><span>Longitude</span><strong>120.738421 E</strong></div>
+          <div><span>Yaw Angle</span><strong>87.6°</strong></div>
+          <div><span>Distance</span><strong>152.4 m</strong></div>
+          <div><span>Confidence</span><strong class="success">98.6%</strong></div>
+        </div>
+
+        <div class="mini-map">
+          <div class="map-grid"></div>
+          <div class="uav-point">UAV</div>
+          <div class="target-point"></div>
+          <div class="tracking-line"></div>
+        </div>
+
+        <div class="auto-actions">
+            <div>
+                <span>Autonomous Hovering</span>
+                <strong>ACTIVE</strong>
+            </div>
+            <div>
+                <span>Zoom Tracking</span>
+                <strong>ACTIVE</strong>
+            </div>
+            <div>
+                <span>Evidence Recording</span>
+                <strong>ACTIVE</strong>
+            </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
